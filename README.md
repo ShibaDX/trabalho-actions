@@ -8,7 +8,7 @@ CRIAR REPO
 
 actions: 
 
-hello world (X)
+hello world (X) <br>
 mostre a data e hora push
 usuário do push
 calcular 2+2 variável no terminal
