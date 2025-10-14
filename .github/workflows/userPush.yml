@@ -12,4 +12,4 @@ jobs:
     steps:
  
       - name: Run a one-line script
-        run: echo "Usuario do push é ${ github.actor }"
+        run: echo "Usuario do push é ${{ github.actor }}"
