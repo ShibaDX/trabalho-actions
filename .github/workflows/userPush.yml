@@ -12,5 +12,4 @@ jobs:
     steps:
  
       - name: Run a one-line script
-        run: echo "user git hub push $(git log --oneline)"
-
+        run: echo git log
