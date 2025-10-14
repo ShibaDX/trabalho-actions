@@ -14,4 +14,4 @@ jobs:
         run: num=2
 
       - name: Mostrar Soma
-        run: echo $num
+        run: echo ${{ num }}
