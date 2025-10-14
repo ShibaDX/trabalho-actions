@@ -11,7 +11,7 @@ CRIAR REPO
 actions: 
 
 hello world (X) <br>
-mostre a data e hora push <br>
+mostre a data e hora push (X)<br>
 usuário do push <br>
 calcular 2+2 variável no terminal <br>
 listar arquivos <br>

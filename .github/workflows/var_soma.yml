@@ -1,0 +1,17 @@
+name: Var Soma
+
+on: 
+  workflow_dispatch:
+  
+jobs:
+  varSoma:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Declarar Variavel
+        run: num=2+2
+
+      - name: Mostrar Soma
+        run: echo $num
