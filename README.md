@@ -12,8 +12,8 @@ actions:
 
 hello world (X) <br>
 mostre a data e hora push (X)<br>
-usuário do push <br>
-calcular 2+2 variável no terminal <br>
+usuário do push (X)<br>
+calcular 2+2 variável no terminal (X) <br>
 listar arquivos <br>
 conta arquivos html <br>
 criar um arquivo de readme ou texto e preencher <br>
