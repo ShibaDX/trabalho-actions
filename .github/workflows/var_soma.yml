@@ -10,8 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Declarar Variavel
-        run: num=$((2+2))
-
-      - name: Mostrar Soma
-        run: echo "$num"
+      - name: Declarar Variavel e Exibir Soma
+        run: |
+          soma=$((2+2))
+          echo "O resultado de 2+2 é $soma"
