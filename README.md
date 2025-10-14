@@ -1,6 +1,8 @@
 # trabalho-actions
-# Aluno1: Gabriel Fonseca Proenca RA:14608
-# Aluno2: Kaiky RA:
+## Aluno1: Gabriel Fonseca Proenca RA:14608
+## Aluno2: Kaiky Massaki Ishibashi RA:14535
+
+# INSTRUÇÕES    
 CRIAR REPO
 1 arquivo HTML
 1 css
