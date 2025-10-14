@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
   
 jobs:
-  build:
+  userPush:
     runs-on: ubuntu-latest
 
     steps:
  
-      - name: Run a one-line script
+      - name: User Push
         run: echo "Usuario do push é ${{ github.actor }}"
