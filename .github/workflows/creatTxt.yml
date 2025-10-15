@@ -11,6 +11,6 @@ jobs:
 
     steps:
       - name: Criar arquivo txt 
-        run: echo "Este é o conteúdo do meu arquivo." > meu_arquivo.txt
+        run: echo "Este é o conteúdo do meu arquivo." >> meu_arquivo.txt
     
   
