@@ -1,0 +1,16 @@
+name: Criar TXT
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  criarTxt:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Criar arquivo txt 
+        run: echo "Este é o conteúdo do meu arquivo." > meu_arquivo.txt
+    
+  
