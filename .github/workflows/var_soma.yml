@@ -12,5 +12,5 @@ jobs:
 
       - name: Declarar Variavel e Exibir Soma
         run: |
-          soma=$((2+2))
-          echo "O resultado de 2+2 é $soma"
+          $num=2+2
+          echo $num
