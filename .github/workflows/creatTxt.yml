@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Criar arquivo txt 
-        run: echo "Este é o conteúdo do meu arquivo." >> meu_arquivo.txt
+      - uses: actions/checkout@v2
+      - uses: 1arp/create-a-file-action@0.4.5
+        with:
+          file: 'my_text.txt'
+          content: |
+            Hello World
     
   
