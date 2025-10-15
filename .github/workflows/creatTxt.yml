@@ -4,17 +4,10 @@ on:
   workflow_dispatch:
 
 jobs:
+      criarTxt:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v4
 
-  criarTxt:
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: 1arp/create-a-file-action@0.4.5
-        with:
-          file: 'my_text.txt'
-          content: |
-            Hello World
-    
-  
+        - name: Criar arquivo TXT com conteúdo
+          run: echo "Este é o conteúdo do arquivo" > meu_arquivo.txt
