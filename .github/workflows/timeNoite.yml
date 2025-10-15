@@ -2,9 +2,7 @@ name: Agendamento Noite
 
 on:
   schedule:
-    - cron: '46 00 * * *'
-  
-  workflow_dispatch:
+    - cron: '51 00 * * *'
 
 jobs:
   agendamentoNoite:
