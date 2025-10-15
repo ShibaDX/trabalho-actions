@@ -11,3 +11,11 @@ jobs:
 
         - name: Criar arquivo TXT com conteúdo
           run: echo "Este é o conteúdo do arquivo" > meu_arquivo.txt
+
+        - name: Commit changes
+          run: |
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"a
+            git add meu_arquivo.txt
+            git commit -m "docs: update changelog with last commit message" || echo "No changes to commit"
+            git push
