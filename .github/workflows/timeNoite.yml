@@ -1,0 +1,17 @@
+name: Agendamento Noite
+
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  
+  workflow_dispatch:
+
+jobs:
+  agendamentoNoite:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Sao_Paulo
+    steps:
+      - name: Mostrar hora atual
+        run: |
+          echo "Já é noite! $(date)"
