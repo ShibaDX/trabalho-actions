@@ -16,7 +16,7 @@ usuário do push (X)<br>
 calcular 2+2 variável no terminal (X) <br>
 listar arquivos (X)<br>
 conta arquivos html (X) <br>
-criar um arquivo de readme ou texto e preencher <br>
+criar um arquivo de readme ou texto e preencher (X)<br>
 if agendamento rodar apenas durante a noite <br>
 if agendamento rodar apenas aos sábados <br>
 if com arquivos maiores que 100kb alertar <br>
