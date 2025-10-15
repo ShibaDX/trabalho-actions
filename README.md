@@ -14,8 +14,8 @@ hello world (X) <br>
 mostre a data e hora push (X)<br>
 usuário do push (X)<br>
 calcular 2+2 variável no terminal (X) <br>
-listar arquivos <br>
-conta arquivos html <br>
+listar arquivos (X)<br>
+conta arquivos html (X) <br>
 criar um arquivo de readme ou texto e preencher <br>
 if agendamento rodar apenas durante a noite <br>
 if agendamento rodar apenas aos sábados <br>
