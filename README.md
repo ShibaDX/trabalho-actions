@@ -2,6 +2,8 @@
 ### Aluno1: Gabriel Fonseca Proenca RA:14608
 ### Aluno2: Kaiky Massaki Ishibashi RA:14535
 
+email: fernando.clavisso@gmail.com
+
 # INSTRUÇÕES    
 CRIAR REPO
 1 arquivo HTML
