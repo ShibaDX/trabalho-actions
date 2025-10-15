@@ -2,15 +2,13 @@ name: Agendamento Noite
 
 on:
   schedule:
-    - cron: '42 21 * * *'
+    - cron: '46 00 * * *'
   
   workflow_dispatch:
 
 jobs:
   agendamentoNoite:
     runs-on: ubuntu-latest
-    env:
-      TZ: America/Sao_Paulo
     steps:
       - name: Mostrar hora atual
         run: |
