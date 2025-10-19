@@ -1,4 +1,4 @@
-name: Contador HTML
+name: Arquivos maior que 100kb
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verificar Tamanho arquivo
-        run: |          
-          count=$(find . -name '*.html' | wc -l)
-          echo "Existem $count arquivos do tipo HTML neste repositório."
+      - name: Listar arquivos maiores que 100KB
+        run: |
+          echo "Arquivos maiores que 100KB:"
+          find . -type f -size +100k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
