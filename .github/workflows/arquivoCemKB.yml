@@ -1,1 +1,19 @@
+name: Contador HTML
 
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+
+  verificarArquivos:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar Tamanho arquivo
+        run: |          
+          count=$(find . -name '*.html' | wc -l)
+          echo "Existem $count arquivos do tipo HTML neste repositório."
