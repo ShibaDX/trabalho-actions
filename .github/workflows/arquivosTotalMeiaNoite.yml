@@ -1,4 +1,4 @@
-name: Contador HTML
+name: Verificar total arquivos REP
 
 on:
     schedule:
@@ -6,13 +6,13 @@ on:
     workflow_dispatch:
 
 jobs:
-  contSoma:
+  contSomarArquivos:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Contar os arquivos HTML
+      - name: Contar os arquivos no REP
         run: |
           count=$(find . -name '*' | wc -l)
           echo "Existem $count arquivos neste repositório."
