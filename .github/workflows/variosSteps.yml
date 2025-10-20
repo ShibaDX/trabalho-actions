@@ -17,7 +17,7 @@ jobs:
       - name: User Push
         run: echo "Usuario do push é ${{ github.actor }}"
 
-      - name: Contar arquivos HTML, CSS e JS enviados no push
+      - name: Contar arquivos HTML, CSS e JS enviados no push 
         run: |
           echo "Arquivos enviados neste push:"
           git diff --name-only ${{ github.event.before }} ${{ github.sha }}

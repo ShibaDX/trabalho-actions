@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Horario Sabado
         run: |
-          echo "Horario que rodou sabado$(date)"
+          echo "Horario que rodou no sábado $(date)"
