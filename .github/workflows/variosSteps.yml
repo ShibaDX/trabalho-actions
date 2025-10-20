@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          # 0 significa baixar todo o histórico.
+          # Necessário para fazer diff com github.event.before
+          fetch-depth: 0
 
       - name: Say dt_hora
         run: date
