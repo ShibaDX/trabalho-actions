@@ -1,5 +1,4 @@
-name: Data hora Push
-
+name: Varios Steps
 on: 
   push:
     branches: [main]
@@ -14,3 +13,13 @@ jobs:
 
       - name: Say dt_hora
         run: date
+
+      - name: User Push
+        run: echo "Usuario do push é ${{ github.actor }}"
+
+      - name: Contar arquivos HTML, CSS e JS enviados no push
+        run: |
+          echo "Arquivos enviados neste push:"
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }}
+          count=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.html$|\.css$|\.js$' | wc -l)
+          echo "Foram enviados $count arquivos HTML, CSS ou JS neste push."
