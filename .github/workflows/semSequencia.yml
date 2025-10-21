@@ -1,0 +1,23 @@
+name: Varios Steps Sem Sequencia
+on: 
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  stepsSemSequencia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Data, Usuario e arquivos HTML, CSS e JS enviados no push
+        run: |
+          date
+          echo "Usuario do push é ${{ github.actor }}"
+          echo "Arquivos enviados neste push:"
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }}
+          count=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.html$|\.css$|\.js$' | wc -l)
+          echo "Foram enviados $count arquivos HTML, CSS ou JS neste push."
